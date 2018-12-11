@@ -20,7 +20,6 @@ Keras-Preprocessing==1.0.5
 kiwisolver==1.0.1
 Markdown==3.0.1
 MarkupSafe==1.1.0
-matplotlib==3.0.1
 midi2audio==0.1.1
 music21==5.5.0
 numpy==1.15.3
