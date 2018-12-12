@@ -233,11 +233,9 @@ def toMIDI(outName):
 
 
 # Convert the MIDI output to audio using music2audio
-# Sound key file is too large for canvas, so I had to delete it from
-# my submission, but the MIDI to audio conversion was only used for the demo.
-# def convertToAudio(index, n):
-    # fs = FluidSynth('audio/Nice-Keys-B-Plus-JN1.4.sf2')
-    # fs.midi_to_audio(fileModelOutputHP[index]['outputName'], n)
+def convertToAudio(index, n):
+    fs = FluidSynth('audio/Nice-Keys-B-Plus-JN1.4.sf2')
+    fs.midi_to_audio(fileModelOutputHP[index]['outputName'], n)
 
 
 # Main Function
@@ -259,4 +257,4 @@ if __name__ == "__main__":
         handleData(fileModelOutputHP[idx]['filePath'], idx)
         outputPredict(fileModelOutputHP[idx]['modelName'], outputLength)
         toMIDI(fileModelOutputHP[idx]['outputName'])
-        # convertToAudio(idx, fileModelOutputHP[idx]['audioName'])
+        convertToAudio(idx, fileModelOutputHP[idx]['audioName'])

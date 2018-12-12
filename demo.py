@@ -11,7 +11,7 @@ def run(m, l):
     mg.handleData(mg.fileModelOutputHP[m]['filePath'], m)
     mg.outputPredict(mg.fileModelOutputHP[m]['modelName'], int(l))
     mg.toMIDI(mg.fileModelOutputHP[m]['outputName'])
-    # mg.convertToAudio(m, "static/demo.wav")
+    mg.convertToAudio(m, "static/demo.wav")
 
 
 @app.route("/")
